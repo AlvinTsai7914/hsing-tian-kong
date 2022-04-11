@@ -1,0 +1,41 @@
+.gauge {
+    min-height: 30vh;
+    padding: 6px;
+
+    div {
+        @include size(100%, 100%);
+        background-color: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.3);
+        border-radius: 6px;
+    }
+}
+
+.lamp {
+    min-height: 100px;
+    padding: 6px;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    div {
+        @include size(100%, 100%);
+        background-color: #1dbfff27;
+        // border-left: 2px solid #1dc0ff;
+        // border-bottom: 2px solid;
+        border: 2px solid;
+        border-image: linear-gradient(90deg,#1dbfff48, #1dbfffc9, #1dbfff48) 1;
+        // clip-path: inset(0 round 10px);
+        // border-image: radial-gradient(circle at 35% 25%,#fff 0,#ccc 20%,#999 40%,#000 90%,#666 95%,#999 100%);  
+    }
+}
+
+.host1{
+    width: 50px; 
+    position: absolute;
+    top: 42%; 
+    left: 21.5%;
+    display: inline-block;
+    border: 0px;
+    &.active{
+        fill: red;
+    }
+}
